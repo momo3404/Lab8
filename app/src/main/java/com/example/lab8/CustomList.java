@@ -52,10 +52,10 @@ public class CustomList {
      * exception thrown when city to be deleted is not in list
      */
     public void delete(City city) {
-//        if (!cities.contains(city)) {
-//            throw new IllegalArgumentException();
-//        }
-//        cities.remove(city);
+        if (!cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
     }
 
     /**
