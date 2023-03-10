@@ -42,15 +42,15 @@ public class CustomListTest {
             CustomList.delete(city); });
     }
 
-//    @Test
-//    void testHasCity(){
-//        CustomList CustomList = mockCustomList();
-//        City city = new City("Calgary", "Alberta");
-//        City city_two = new City("Regina", "Saskatchewan");
-//        CustomList.add(city);
-//        assertTrue(CustomList.hasCity(city));
-//        assertFalse(CustomList.hasCity(city_two));
-//    }
+    @Test
+    void testHasCity(){
+        CustomList CustomList = mockCustomList();
+        City city = new City("Calgary", "Alberta");
+        City city_two = new City("Regina", "Saskatchewan");
+        CustomList.add(city);
+        assertTrue(CustomList.hasCity(city));
+        assertFalse(CustomList.hasCity(city_two));
+    }
 //
 //    @Test
 //    void testCountCities(){

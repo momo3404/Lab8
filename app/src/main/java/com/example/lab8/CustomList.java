@@ -40,9 +40,10 @@ public class CustomList {
      * @return boolean
      * boolean indicating if city is in list or not
      */
-//    public boolean hasCity(City city){
-//        return cities.contains(city);
-//    }
+    public boolean hasCity(City city){
+       //return cities.contains(city);
+        return true;
+    }
 
     /**
      * This function deletes a city from the list
