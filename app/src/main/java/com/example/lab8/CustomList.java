@@ -16,20 +16,21 @@ import java.util.List;
 
 public class CustomList {
 
-    private ArrayList<City> cities;
+    private List<City> cities = new ArrayList<>();
     private Context context;
-    public int getCount(){
-        return cities.size();
-    }
 
-    public void addCity(City city){
-        cities.add(city);
-    }
 
     public List getCities() {
         List<City> list = cities;
         //Collections.sort(list);
         return list;
+    }
+
+    public void add(City city) {
+        if (cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.add(city);
     }
 
     /**

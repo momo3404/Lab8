@@ -9,7 +9,7 @@ public class City {
     private String city;
     private String province;
 
-    private List<City> cities = new ArrayList<>();
+    //private List<City> cities = new ArrayList<>();
 
     public City(String city, String province){
         this.city = city;
