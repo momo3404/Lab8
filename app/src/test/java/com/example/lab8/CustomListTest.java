@@ -51,17 +51,17 @@ public class CustomListTest {
         assertTrue(CustomList.hasCity(city));
         assertFalse(CustomList.hasCity(city_two));
     }
-//
-//    @Test
-//    void testCountCities(){
-//        CustomList CustomList = mockCustomList();
-//        assertEquals(1, CustomList.countCities());
-//        City city = new City("Red Deer", "Alberta");
-//        CustomList.add(city);
-//        assertEquals(2, CustomList.countCities());
-//        CustomList.delete(city);
-//        assertEquals(1, CustomList.countCities());
-//    }
+
+    @Test
+    void testCountCities(){
+        CustomList CustomList = mockCustomList();
+        assertEquals(1, CustomList.countCities());
+        City city = new City("Red Deer", "Alberta");
+        CustomList.add(city);
+        assertEquals(2, CustomList.countCities());
+        CustomList.delete(city);
+        assertEquals(1, CustomList.countCities());
+    }
 
 
 }
