@@ -41,8 +41,7 @@ public class CustomList {
      * boolean indicating if city is in list or not
      */
     public boolean hasCity(City city){
-       //return cities.contains(city);
-        return true;
+       return cities.contains(city);
     }
 
     /**
