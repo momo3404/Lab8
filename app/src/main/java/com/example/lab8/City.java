@@ -1,9 +1,15 @@
 package com.example.lab8;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class City {
 
     private String city;
     private String province;
+
+    private List<City> cities = new ArrayList<>();
 
     public City(String city, String province){
         this.city = city;
@@ -17,4 +23,12 @@ public class City {
     String getProvinceName(){
         return this.province;
     }
+
+    public List getCities() {
+        List<City> list = cities;
+        Collections.sort(list);
+        return list;
+    }
+
+
 }
