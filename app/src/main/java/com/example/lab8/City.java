@@ -24,11 +24,7 @@ public class City {
         return this.province;
     }
 
-    public List getCities() {
-        List<City> list = cities;
-        Collections.sort(list);
-        return list;
-    }
+
 
 
 }

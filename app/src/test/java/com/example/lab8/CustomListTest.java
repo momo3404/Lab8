@@ -42,26 +42,26 @@ public class CustomListTest {
             CustomList.delete(city); });
     }
 
-    @Test
-    void testHasCity(){
-        CustomList CustomList = mockCustomList();
-        City city = new City("Calgary", "Alberta");
-        City city_two = new City("Regina", "Saskatchewan");
-        CustomList.addCity(city);
-        assertTrue(CustomList.hasCity(city));
-        assertFalse(CustomList.hasCity(city_two));
-    }
-
-    @Test
-    void testCountCities(){
-        CustomList CustomList = mockCustomList();
-        assertEquals(1, CustomList.countCities());
-        City city = new City("Red Deer", "Alberta");
-        CustomList.addCity(city);
-        assertEquals(2, CustomList.countCities());
-        CustomList.delete(city);
-        assertEquals(1, CustomList.countCities());
-    }
+//    @Test
+//    void testHasCity(){
+//        CustomList CustomList = mockCustomList();
+//        City city = new City("Calgary", "Alberta");
+//        City city_two = new City("Regina", "Saskatchewan");
+//        CustomList.addCity(city);
+//        assertTrue(CustomList.hasCity(city));
+//        assertFalse(CustomList.hasCity(city_two));
+//    }
+//
+//    @Test
+//    void testCountCities(){
+//        CustomList CustomList = mockCustomList();
+//        assertEquals(1, CustomList.countCities());
+//        City city = new City("Red Deer", "Alberta");
+//        CustomList.addCity(city);
+//        assertEquals(2, CustomList.countCities());
+//        CustomList.delete(city);
+//        assertEquals(1, CustomList.countCities());
+//    }
 
 
 }

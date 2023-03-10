@@ -11,19 +11,25 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class CustomList {
 
     private ArrayList<City> cities;
     private Context context;
-
-
-
     public int getCount(){
         return cities.size();
     }
 
     public void addCity(City city){
+        cities.add(city);
+    }
+
+    public List getCities() {
+        List<City> list = cities;
+        //Collections.sort(list);
+        return list;
     }
 
     /**
@@ -33,9 +39,9 @@ public class CustomList {
      * @return boolean
      * boolean indicating if city is in list or not
      */
-    public boolean hasCity(City city){
-        return cities.contains(city);
-    }
+//    public boolean hasCity(City city){
+//        return cities.contains(city);
+//    }
 
     /**
      * This function deletes a city from the list
@@ -45,10 +51,10 @@ public class CustomList {
      * exception thrown when city to be deleted is not in list
      */
     public void delete(City city) {
-        if (!cities.contains(city)) {
-            throw new IllegalArgumentException();
-        }
-        cities.remove(city);
+//        if (!cities.contains(city)) {
+//            throw new IllegalArgumentException();
+//        }
+//        cities.remove(city);
     }
 
     /**
